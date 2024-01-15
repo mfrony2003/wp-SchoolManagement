@@ -1,0 +1,4 @@
+isbn,cat_id,book_name,author_name,rack_location,price,quentity,description
+435016954,English,English,Michael Crichton,M J Library,1000,9,English Books
+435016954,Geography,Geography,J.K. Rowling,M J Library,500,9, Geography Book
+743273567,TimeLine,Time line,F. Scott Fitzgerald,M J Library,2000,9,Timeline book
