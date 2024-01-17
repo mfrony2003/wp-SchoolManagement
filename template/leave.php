@@ -808,7 +808,7 @@
                             <div class="form-body user_form">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <input type="submit" value="<?php if($edit){ _e('Save','school-mgt'); }else{ _e('Add Leave','school-mgt');}?>" name="save_leave" class="btn btn-success save_btn save_leave_validate"/>
+                                        <input type="submit" value="<?php if($edit){ _e('Save','school-mgt'); }else{ _e('Add Leave','school-mgt');}?>" name="save_leave" class="btn btn-success save_btn"/>
                                     </div>
                                 </div>
                             </div>
