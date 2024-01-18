@@ -1978,10 +1978,10 @@ if (!empty($exam_list)) {
 												<img src="<?php echo SMS_PLUGIN_URL."/assets/images/dashboard_icon/Avatar1.png"?>" class="smgt-dropdown-userimg">
 											</a>
 											<ul class="dropdown-menu extended action_dropdawn logout_dropdown_menu logout heder-dropdown-menu" aria-labelledby="dropdownMenuLink">
-												<li class="float_left_width_100 ">
+<!-- 												<li class="float_left_width_100 ">
 													<a class="dropdown-item smgt-back-wp float_left_width_100" href="<?php echo admin_url();?>"><i class="fa fa-user"></i>
 													<?php esc_html_e( 'Back to wp-admin', 'school-mgt' ); ?></a>
-												</li>
+												</li> -->
 												<li class="float_left_width_100 ">
 													<a class="dropdown-item float_left_width_100" href="<?php echo wp_logout_url(home_url()); ?>"><i class="fa fa-sign-out"></i><?php esc_html_e( 'Log Out', 'school-mgt' ); ?></a>
 												</li>
