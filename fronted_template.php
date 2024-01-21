@@ -20,6 +20,7 @@ $obj_event = new event_Manage();
 $obj_virtual_classroom = new mj_smgt_virtual_classroom();
 $notive_array = array ();
 $cal_array = array ();
+
 //--------- User Student ---------//
 if($school_obj->role=='student')
 {
