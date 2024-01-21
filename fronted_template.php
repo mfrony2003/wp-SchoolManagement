@@ -2836,8 +2836,24 @@ if (is_super_admin ()) {
 													<?php
 													$obj_feespayment = new mj_smgt_feespayment();
 													$i= 0;
-													$feespayment_data = $obj_feespayment->mj_smgt_get_five_fees();
+													//$feespayment_data = $obj_feespayment->mj_smgt_get_five_fees();
 													//$feespayment_data = $obj_feespayment->mj_smgt_get_five_fees_users($user->ID);
+										 
+													if($school_obj->role=='parent')
+													{
+														$chil_array =$school_obj->child_list;
+														if(!empty($chil_array))
+														{
+															foreach($chil_array as $child_id)
+															{
+																$feespayment_data = $obj_feespayment->mj_smgt_get_five_fees_users($child_id);
+															}
+														}
+													}
+													else
+													{
+														$feespayment_data = $obj_feespayment->mj_smgt_get_five_fees_users($user->ID);
+													}
 													$page='feepayment';
 													$feepayment_access_right = mj_smgt_get_userrole_wise_filter_access_right_array($page);
 													if(!empty($feespayment_data))
